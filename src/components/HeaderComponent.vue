@@ -14,19 +14,31 @@
               <a href="#">CHARACTERS</a>
             </li>
             <li class="active">
-              <a href="#">CHARACTERS</a>
+              <a href="#">COMICS</a>
             </li>
             <li>
-              <a href="#">CHARACTERS</a>
+              <a href="#">MOVIES</a>
             </li>
             <li>
-              <a href="#">CHARACTERS</a>
+              <a href="#">TV</a>
             </li>
             <li>
-              <a href="#">CHARACTERS</a>
+              <a href="#">GAMES</a>
             </li>
             <li>
-              <a href="#">CHARACTERS</a>
+              <a href="#">COLLECTIBLES</a>
+            </li>
+            <li>
+              <a href="#">VIDEOS</a>
+            </li>
+            <li>
+              <a href="#">FANS</a>
+            </li>
+            <li>
+              <a href="#">NEWS</a>
+            </li>
+            <li>
+              <a href="#">SHOP</a>
             </li>
           </ul>
         </nav>
@@ -63,8 +75,8 @@ header {
   width: 6%;
 }
 .header-menu {
-  font-size: 0.6rem;
-  font-weight: 700;
+  font-size: $main-font-size;
+  font-weight: $main-font-weight;
 
   nav {
     height: 100%;

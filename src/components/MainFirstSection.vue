@@ -23,7 +23,7 @@ export default {
 
 // *STYLING
 section {
-    padding: 4rem;
+    padding: $section-padding;
     color: #fff;
     background-color: $secondary-color;
 }

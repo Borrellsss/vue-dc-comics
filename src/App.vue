@@ -2,7 +2,7 @@
   <div id="app">
     <!-- HEADER -->
     <HeaderComponent/>
-    
+
     <!-- MAIN -->
     <main>
       <!-- first section -->
@@ -11,6 +11,8 @@
       <MainSecondSection/>
     </main>
 
+    <!-- FOOTER -->
+    <FooterComponent/>
   </div>
 </template>
 
@@ -19,13 +21,15 @@
 import HeaderComponent from './components/HeaderComponent.vue';
 import MainFirstSection from './components/MainFirstSection.vue';
 import MainSecondSection from './components/MainSecondSection.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
     MainFirstSection,
-    MainSecondSection
+    MainSecondSection,
+    FooterComponent
   }
 }
 </script>
