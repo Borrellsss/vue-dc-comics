@@ -1,0 +1,88 @@
+<template>
+<header>
+  <div class="container">
+    <div class="flex">
+      <!-- header image -->
+      <div class="header-img">
+        <img src="../assets/img/dc-logo.png" alt="logo DC">
+      </div>
+      <!-- header menu -->
+      <div class="header-menu">
+        <nav>
+          <ul class="flex">
+            <li>
+              <a href="#">CHARACTERS</a>
+            </li>
+            <li class="active">
+              <a href="#">CHARACTERS</a>
+            </li>
+            <li>
+              <a href="#">CHARACTERS</a>
+            </li>
+            <li>
+              <a href="#">CHARACTERS</a>
+            </li>
+            <li>
+              <a href="#">CHARACTERS</a>
+            </li>
+            <li>
+              <a href="#">CHARACTERS</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+</template>
+
+<script>
+export default {
+  name: "HeaderComponent",
+  data() {
+    return {
+      
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+// *IMPORTS
+@import "../style/Variables.scss";
+
+// *STYLING
+.container .flex {
+  justify-content: space-between;
+}
+header {
+  background-color: #fff;
+}
+.header-img {
+  padding: 0.8rem 0;
+  width: 6%;
+}
+.header-menu {
+  font-size: 0.6rem;
+  font-weight: 700;
+
+  nav {
+    height: 100%;
+
+    ul {
+      height: 100%;
+
+      li {
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+
+        &.active {
+          color: $main-color;
+          box-shadow: 0 -5px $main-color inset;
+        }
+      }
+    }
+  }
+}
+</style>

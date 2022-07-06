@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- HEADER -->
+    <HeaderComponent/>
+    
+    <!-- MAIN -->
+    <main>
+      <!-- first section -->
+      <MainFirstSection/>
+      <!-- second section -->
+      <MainSecondSection/>
+    </main>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// *IMPORTS
+import HeaderComponent from './components/HeaderComponent.vue';
+import MainFirstSection from './components/MainFirstSection.vue';
+import MainSecondSection from './components/MainSecondSection.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderComponent,
+    MainFirstSection,
+    MainSecondSection
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+// *IMPORTS
+@import "./style/Variables.scss";
+@import "./style/Common.scss";
 </style>
