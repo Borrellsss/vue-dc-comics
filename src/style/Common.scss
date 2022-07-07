@@ -34,3 +34,13 @@ h4 {
 .flex {
     display: flex;
 }
+.btn {
+    display: inline-block;
+    border: 2px solid;
+    
+    &.blue {
+        padding: $blue-border-btn-padding;
+        border-color: $main-color;
+        font-size: $blue-border-btn-font-size;
+    }
+}
