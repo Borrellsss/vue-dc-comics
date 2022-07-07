@@ -69,6 +69,9 @@ export default {
 }
 header {
   background-color: #fff;
+  box-shadow: 0 0 5px black;
+  position: relative;
+  z-index: 100;
 }
 .header-img {
   padding: 0.8rem 0;

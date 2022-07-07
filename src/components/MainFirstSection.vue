@@ -1,17 +1,26 @@
 <template>
-<section>
-    <div class="container">
-        content goes here!
-    </div>
-</section>
+    <section>
+        <div class="container">
+            <div class="flex">
+                <CardComponent v-for="(element, index) in comics" :key="index" :cardData="element"/>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
+// *IMPORTS
+import ComicsData from '../data/dc-comics.json'
+import CardComponent from './CardComponent.vue'
+
 export default {
     name: "MainFirstSection",
+    components: {
+        CardComponent,
+    },
     data() {
         return {
-            
+            comics: ComicsData,
         }
     }
 }
@@ -22,6 +31,10 @@ export default {
 @import "../style/Variables.scss";
 
 // *STYLING
+.container > .flex {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
 section {
     padding: $section-padding;
     color: #fff;
