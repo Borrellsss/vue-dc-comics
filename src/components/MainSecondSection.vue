@@ -56,7 +56,7 @@ export default {
 
 // *STYLING
 section {
-    padding: $section-padding;
+    padding: $second-section-padding;
     font-size: $main-font-size;
     color: #fff;
     background-color: $main-color;

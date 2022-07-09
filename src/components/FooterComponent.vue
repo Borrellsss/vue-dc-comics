@@ -118,7 +118,7 @@
         <div class="container">
             <div class="flex">
                 <div class="footer-bottom-left">
-                    <a href="#" class="btn blue">SIGN-UP NOW!</a>
+                    <a href="#" class="btn transparent-blue">SIGN-UP NOW!</a>
                 </div>
                 <div class="footer-bottom-right">
                     <div class="sites flex">

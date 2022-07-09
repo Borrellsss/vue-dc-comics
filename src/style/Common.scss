@@ -38,9 +38,17 @@ h4 {
     display: inline-block;
     border: 2px solid;
     
-    &.blue {
+    &.transparent-blue {
         padding: $blue-border-btn-padding;
         border-color: $main-color;
         font-size: $blue-border-btn-font-size;
+        font-weight: $main-font-weight;
+    }
+    &.full-blue {
+        padding: $blue-full-btn-padding;
+        border-color: $main-color;
+        background-color: $main-color;
+        font-size: $blue-full-btn-font-size;
+        font-weight: $main-font-weight;
     }
 }
